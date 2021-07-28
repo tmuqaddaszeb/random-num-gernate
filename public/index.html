@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <div class="bg-pink-400 min-h-screen"></div>
-</body>
+  </head>
+  <body>
+    <div
+      class="
+        bg-pink-400
+        min-h-screen
+        flex
+        justify-center
+        align-center
+        items-center
+        p-24
+      "
+    >
+      <button
+        onclick="clearInterval(foo)"
+        class="
+          no-underline
+          border-2 border-blue-300
+          bg-blue-600
+          rounded-full
+          w-20
+          p-2
+          font
+          text-white
+          flex
+          items-center
+          justify-center
+          transition
+          duration-1s
+          ease-in-out
+          hover:underline hover:bg-blue-300 hover:border-blue-600
+        "
+      >
+        Stop</button
+      ><b><b>
+      <p id="generte" class="p-28  no-underline
+          border-2 border-blue-300
+          bg-blue-600
+          rounded-full
+          w-20"></p>
+
+      <script type="text/javascript">
+        var foo = setInterval(ran, 1000);
+        function ran() {
+          var d = Math.floor(Math.random() * 20);
+          document.getElementById("generte").innerHTML = d;
+        }
+      </script>
+    </div>
+  </body>
 </html>
